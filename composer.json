@@ -1,0 +1,14 @@
+{
+    "name": "ikhlashmulya/phpweb",
+    "autoload": {
+        "psr-4": {
+            "Ikhlashmulya\\Phpweb\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ikhlash Mulyanurahaman"
+        }
+    ],
+    "require": {}
+}
