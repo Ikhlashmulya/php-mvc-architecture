@@ -2,7 +2,7 @@
     "name": "ikhlashmulya/phpweb",
     "autoload": {
         "psr-4": {
-            "Ikhlashmulya\\Phpweb\\": "src/"
+            "Ikhlashmulya\\Phpweb\\": "app/"
         }
     },
     "authors": [

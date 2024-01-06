@@ -3,5 +3,5 @@
 namespace Ikhlashmulya\Phpweb\Middleware;
 
 interface Middleware {
-  public function handle();
+    public function handle();
 }
