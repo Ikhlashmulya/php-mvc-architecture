@@ -11,6 +11,6 @@ use Ikhlashmulya\Phpweb\Middleware\AuthMiddleware;
 $router = new Router();
 
 $router->add('GET', '/', [HomeController::class, 'index']);
-$router->add('GET', '/user/:id', [UserController::class, 'show']);
+$router->add('GET', '/user/:id', [UserController::class, 'show'], [AuthMiddleware::class]);
 
 $router->run();

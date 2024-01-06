@@ -2,8 +2,8 @@
 
 namespace Ikhlashmulya\Phpweb\Middleware;
 
-class AuthMiddleware {
-  public function __invoke() {
+class AuthMiddleware implements Middleware {
+  public function handle() {
     echo("Before execute handler");
   }
 }

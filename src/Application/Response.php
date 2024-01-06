@@ -7,7 +7,11 @@ class Response {
     require_once(__DIR__ . '/../View/' . $view . '.php');
   }
   
-  public static function json() {
-    // TODO : create response json
+  public static function redirect(string $url) {
+    // TODO : implements method
+  }
+  
+  public static function json(array $data) {
+    // TODO : implements method
   }
 }
