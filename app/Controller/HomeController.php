@@ -2,15 +2,13 @@
 
 namespace Ikhlashmulya\Phpweb\Controller;
 
-use Ikhlashmulya\Phpweb\Application\Response;
-
-class HomeController
+class HomeController extends Controller
 {
     public function index()
     {
         $model = [
             'title' => 'home'
         ];
-        Response::view('home', $model);
+        $this->view('home', $model);
     }
 }

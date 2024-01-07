@@ -9,6 +9,11 @@
 
 <body>
     <h1>Welcome</h1>
+    <form action="/user" method="post">
+        <label for="name">input name :</label>
+        <input type="text" name="name">
+        <button type="submit">Kirim</button>
+    </form>
 
 </body>
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Ikhlashmulya\Phpweb\Application;
+namespace Ikhlashmulya\Phpweb\Config;
 
 use Ikhlashmulya\Phpweb\Middleware\Middleware;
 

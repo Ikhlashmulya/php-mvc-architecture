@@ -2,15 +2,19 @@
 
 namespace Ikhlashmulya\Phpweb\Controller;
 
-use Ikhlashmulya\Phpweb\Application\Response;
-
-class UserController
+class UserController extends Controller
 {
     public function show($id)
     {
-        Response::view('user', [
+        $this->view('user', [
             'title' => 'home',
             'id' => $id
         ]);
+    }
+
+    public function store()
+    {
+        $name = $this->formValue('name');
+        echo ('Hello ' . $name);
     }
 }
