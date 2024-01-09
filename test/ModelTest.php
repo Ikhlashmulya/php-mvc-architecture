@@ -17,28 +17,29 @@ class ModelTest extends TestCase
 
     public function testInsert()
     {
-        $lastId = $this->userModel->insert(['name' => 'john']);
+        $lastId = $this->userModel->insert(['username' => 'rina', 'password' => password_hash('SECRET', PASSWORD_DEFAULT)]);
         $this->assertNotEmpty($lastId);
     }
 
     public function testFindById()
     {
-        $lastId = $this->userModel->insert(['name' => 'rina']);
+        $lastId = $this->userModel->insert(['username' => 'rina', 'password' => password_hash('SECRET', PASSWORD_DEFAULT)]);
         $user = $this->userModel->findById($lastId);
         $this->assertNotNull($user);
         var_dump($user->id);
-        var_dump($user->name);
+        var_dump($user->username);
+        var_dump($user->password);
     }
 
     public function testUpdate()
     {
-        $lastId = $this->userModel->insert(['name' => 'john']);
-        $this->assertTrue($this->userModel->update(['name' => 'john doe'], ['id' => $lastId]));
+        $lastId = $this->userModel->insert(['username' => 'rina', 'password' => password_hash('SECRET', PASSWORD_DEFAULT)]);
+        $this->assertTrue($this->userModel->update(['username' => 'john doe'], ['id' => $lastId]));
     }
     
     public function testDelete()
     {
-        $lastId = $this->userModel->insert(['name' => 'john']);
+        $lastId = $this->userModel->insert(['username' => 'rina', 'password' => password_hash('SECRET', PASSWORD_DEFAULT)]);
         $this->assertTrue($this->userModel->delete(['id' => $lastId]));
     }
 }

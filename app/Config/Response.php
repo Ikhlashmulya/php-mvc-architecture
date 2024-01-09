@@ -11,7 +11,7 @@ trait Response
 
     public function redirect(string $url)
     {
-        // TODO : implements method
+        header('Location: ' . $url);
     }
 
     public function json(array $data)

@@ -8,8 +8,3 @@
 </head>
 
 <body>
-    <h1>Hello User <?= $model['id'] ?></h1>
-
-</body>
-
-</html>
